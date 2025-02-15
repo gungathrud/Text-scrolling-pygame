@@ -36,8 +36,6 @@ def load_text_dict():
 	z = pygame.image.load('images/letters/z.png').convert_alpha()
 	for letter in string.ascii_lowercase:
 		text_images_dict[letter] = pygame.image.load(f'images/letters/{letter}.png').convert_alpha()
-	for num in string.digits:
-		text_images_dict[num] = pygame.image.load(f'images/letters/{letter}.png').convert_alpha()
 	text_images_dict[' '] = pygame.Surface((1, 20), pygame.SRCALPHA)
 	text_images_dict['/'] = pygame.Surface((1, 20), pygame.SRCALPHA)
 def load_text(text):
