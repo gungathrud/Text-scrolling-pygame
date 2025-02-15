@@ -19,3 +19,7 @@ counter_txt_reset just resets the counter variable to 0, this is because if you 
 so the next time you run it the first 30 letters will e blitted and it'll keep counting from there so you need to reset it to start blitting from 0 again
 
 all_text_func(text, x_pos, y_pos, init,speed) is just a function that calls all the other functions except counter_txt_reset(), this needs ot be called seperately
+
+so all_text_func('hello/world', 200,200,200,.5) will blit each letter every 2 frames, at (200,200):
+hello
+world
