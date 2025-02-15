@@ -1,7 +1,6 @@
 import string 
 import pygame
 text_list = []
-text_done = 0
 text_images_dict = {}
 counter_txt = 0
 text_animation_list = []
@@ -54,7 +53,7 @@ def draw_text(x_pos,y_pos, init):
 			screen.blit(letter_image, (x_pos, y_pos))
 			x_pos += 20
 def text_animation(speed):
-	global  text_done, text_animation_list, counter_txt
+	global  text_animation_list, counter_txt
 	counter_txt += speed
 	text_animation_list = text_list[0:int(counter_txt)]
 def counter_txt_reset():
